@@ -1,0 +1,37 @@
+    SourceFile
+        SyntaxList
+            ClassDeclaration
+                ClassKeyword
+                    Text: class
+                Identifier
+                    Text: Demo
+                FirstPunctuation
+                    Text: {
+                SyntaxList
+                    Constructor
+                        ConstructorKeyword
+                            Text: constructor
+                        OpenParenToken
+                            Text: (
+                        SyntaxList
+                            Parameter
+                                Identifier
+                                    Text: otherDemo
+                                ColonToken
+                                    Text: :
+                                TypeReference
+                                    Identifier
+                                        Text: Demo
+                        CloseParenToken
+                            Text: )
+                        Block
+                            FirstPunctuation
+                                Text: {
+                            SyntaxList
+                                Text: 
+                            CloseBraceToken
+                                Text: }
+                CloseBraceToken
+                    Text: }
+        EndOfFileToken
+            Text: 

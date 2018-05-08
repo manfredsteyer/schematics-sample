@@ -1,0 +1,10 @@
+{
+    "schematics": {
+      "menu": {
+        "aliases": [ "mnu" ],
+        "factory": "./menu",
+        "description": "Generates a menu component",
+        "schema": "./menu/schema.json"
+      }
+    }
+}

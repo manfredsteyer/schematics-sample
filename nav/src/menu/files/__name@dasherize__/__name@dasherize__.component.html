@@ -1,0 +1,48 @@
+<div class="sidebar-wrapper">
+    <div class="logo">
+        <a class="simple-text">
+            AppTitle
+        </a>
+    </div>
+    <ul class="nav">
+
+<% if (menuService) { %>
+    <li *ngFor="let item of items">
+        <a>
+            <i class="{{item.iconClass}}"></i>
+            <p>{{item.title}}</p>
+        </a>
+    </li>
+
+<% } else { %>
+        <li>
+            <a>
+                <i class="ti-home"></i>
+                <p>Home</p>
+            </a>
+        </li>
+
+        <li>
+            <a>
+                <i class="ti-arrow-top-right"></i>
+                <p>Other Menu Item</p>
+            </a>
+        </li>
+
+		<li>
+			<a>
+				<i class="ti-shopping-cart"></i>
+				<p>Further Menu Item</p>
+			</a>
+		</li>
+
+		<li>
+			<a>
+				<i class="ti-close"></i>
+				<p>Yet another one</p>
+			</a>
+		</li>
+        <% } %>
+    </ul>
+</div>
+
